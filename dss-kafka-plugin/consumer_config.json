@@ -1,0 +1,20 @@
+{
+    "bootstrap_servers": "localhost:9092",
+    "group_id": "dataiku-consumer",
+    "auto_offset_reset": "earliest",
+    "enable_auto_commit": true,
+    "auto_commit_interval_ms": 5000,
+    "session_timeout_ms": 10000,
+    "max_poll_records": 500,
+    "request_timeout_ms": 30000,
+    "heartbeat_interval_ms": 3000,
+    "max_poll_interval_ms": 300000,
+    "max_partition_fetch_bytes": 1048576,
+    "max_in_flight_requests_per_connection": 5,
+    "fetch_max_bytes": 52428800,
+    "fetch_min_bytes": 1,
+    "fetch_max_wait_ms": 500,
+    "receive_buffer_bytes": 65536,
+    "send_buffer_bytes": 131072
+  }
+  

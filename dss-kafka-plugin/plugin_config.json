@@ -1,0 +1,41 @@
+
+{
+    "kafka_topic": {
+        "type": "string",
+        "description": "The name of the Kafka topic to consume messages from."
+    },
+    "output_dataset": {
+        "type": "dataset",
+        "description": "The output dataset to write the messages to."
+    },
+    "log_level": {
+        "type": "string",
+        "default": "INFO",
+        "description": "The logging level to use for the plugin."
+    },
+    "key_schema": {
+        "type": "string",
+        "description": "The type of key schema. Choices: Bytes, String, Json, Avro, Json Schema",
+        "required": true
+    },
+    "key_schema_str": {
+        "type": "string",
+        "description": "The string representation of the key schema, if applicable.",
+        "required": false
+    },
+    "value_schema": {
+        "type": "string",
+        "description": "The type of value schema. Choices: Bytes, String, Json, Avro, Json Schema",
+        "required": true
+    },
+    "value_schema_str": {
+        "type": "string",
+        "description": "The string representation of the value schema, if applicable.",
+        "required": false
+    },
+    "consumer_close_time": {
+        "type": "integer",
+        "description": "The time in seconds after which the consumer should be closed.",
+        "required": true
+    }
+}
