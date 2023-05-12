@@ -33,7 +33,7 @@ The following configuration parameters can be set in the DSS dataset settings:
 - **`data_format`**: The format of the messages. Currently, only Avro format is supported.
 - **`schema_registry_url`**: The URL of the Confluent Schema Registry.
 - **`avro_schema_subject`**: The name of the Avro schema subject in the Schema Registry. By default, it is set to **`<kafka_topic>-value`**.
-- `**data_format_schema_subject**`: The name of the schema subject in the schema registry for the specified data format. By default, it is set to **`<kafka_topic>-value`**, but can be customized to match the naming conventions used in the schema registry.
+- **`data_format_schema_subject`**: The name of the schema subject in the schema registry for the specified data format. By default, it is set to **`<kafka_topic>-value`**, but can be customized to match the naming conventions used in the schema registry.
 
 ### Support
 
